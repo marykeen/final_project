@@ -82,15 +82,15 @@
 
                       <div class="container mt-5 w-50" style="background-color:black; color: white;">
                           <h2>Subscribe to our Mailing List</h2>
-                      <form  class="was-validated pb-3" action="" method="" enctype="multipart/form-data" name="deliveryForm">
+                      <form  class="was-validated pb-3" action="subscribe.php" method="POST" enctype="multipart/form-data" name="deliveryForm">
                         <div class="form-group">
                           <label for="name">Name</label>
-                          <input type="text" class="form-control" aria-describedby="emailHelp">
+                          <input type="text" class="form-control" aria-describedby="emailHelp" name="name" required>
                           
                         </div>
                         <div class="form-group">
                           <label for="email">Your Email</label>
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" name="email" required>
                         </div>
                         
                      <button class="btn btn-primary" type="submit">Subscribe</button>
